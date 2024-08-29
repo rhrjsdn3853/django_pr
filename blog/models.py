@@ -1,8 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
-from django.db import models
 
 # Tag table 작성 - pk는 자동 생성됨
 class Tag(models.Model):

@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "blog",
-    "board", # 마지막 줄에도 기왕이면 ,를 적어주세요
+    "board", # 마지막 줄에도 기왕이면 ,를 적어주세요\
+    "account",
 ]
 
 MIDDLEWARE = [
@@ -134,3 +135,7 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, '_media') 
+
+
+# LOGIN_REDIRECT_URL = '/blog/post-list'
+LOGIN_REDIRECT_URL = 'blog_app:post_list'
