@@ -32,7 +32,18 @@
                     <li class="nav-item"><a class="nav-link" href="#three">Technical Editor</a></li>
                 </ul>
 
-                
+                {% if user.is_authenticated %}
+                    {{ user.username }}
+                    <a href="#"><button value = "로그아웃"></button></a>
+
+            
+
+                {% else %}
+                    <a href="/account/login"><button value ="로그인"></button></a>
+                    <a href="/account/signup"><button value="회원가입"></button></a>
+
+
+                {% endif %}
 
             </div>
         </div>
