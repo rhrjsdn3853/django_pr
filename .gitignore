@@ -1,6 +1,9 @@
 myproject/
-__pycache__/
+__pycachse__/
 migrations/
 db.sqlite3
 _media/
+staticfiles/
+static/
 .env
+_media/
